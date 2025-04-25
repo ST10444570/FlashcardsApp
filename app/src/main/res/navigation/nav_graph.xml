@@ -26,4 +26,8 @@
         android:id = "@+id/scoreScreen"
         android:name = "com.example.quizapp.scoreScreen"
         android:label = "Score" />
+
+    <action
+        android:id="@+id/action_resultFragment_to_welcomeFragment"
+        app:destination="@id/welcomeScreen" />
 </navigation>
