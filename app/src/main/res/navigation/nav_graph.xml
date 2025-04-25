@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:id = "@+id/nav_graph"
+    app:startDestination = "@id/welcomeScreen">
+
+    <Screen
+        android:id = "@+id/welcomeScreen"
+        android:name = "com.example.quizapp.WelcomeScreen"
+        android:label = "Welcome" >
+        <action
+            android:id = "@+id/action_welcomeScreen_to_quizScreen"
+            app:destination = "@id/quizScreen" />
+    </Screen>
+
+    <Screen
+        android:id = "@+id/quizScreen"
+        android:name = "com.example.quizapp.QuizScreen"
+        android:label = "Quiz" >
+        <action
+            android:id = "@+id/action_quizScreen_to_scoreScreen"
+            app:destination = "@id/scoreScreen" />
+    </Screen>
+
+    <Screen
+        android:id = "@+id/scoreScreen"
+        android:name = "com.example.quizapp.scoreScreen"
+        android:label = "Score" />
+</navigation>
